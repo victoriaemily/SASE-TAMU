@@ -22,13 +22,13 @@ const config = {
   extends: ["next", "plugin:@typescript-eslint/recommended"],
   rules: {
     "@typescript-eslint/consistent-type-imports": [
-      "off"",
+      "warn",
       {
         prefer: "type-imports",
         fixStyle: "inline-type-imports",
       },
     ],
-    "@typescript-eslint/no-unused-vars": ["off", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
   },
 };
 
