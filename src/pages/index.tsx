@@ -53,6 +53,18 @@ const Home: NextPage = () => {
           <div>
             <div className="dash-sm mt-3"></div>
           </div>
+          <div className="flex font-source text-lg flex-row space-x-5 mt-3 items-center justify-center">
+            <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
+              <a href="/join">
+                Join SASE!
+              </a>
+            </button>
+            <button className="bg-slate-500 bg-opacity-25 mt-5 hover:bg-slate-500 hover:text-white text-white py-2 px-4 border rounded">
+            <a href="/upcoming-events">
+                Upcoming Events
+              </a>
+            </button>
+          </div>
           
       </div>
     </div>
@@ -80,9 +92,9 @@ const Home: NextPage = () => {
     </div>
     
     <div>
-    <a className="font-bebas text-5xl pt-20 pr-10 pl-10 md:pl-20">Core Pilars</a>
+    <a className="font-bebas text-5xl pt-20 pr-5 pl-5 md:pl-20">Core Pilars</a>
 
-    <section id="projects" className='font-source bg-white text-lg grid md:flex-row lg:flex justify-center py-10 pl-20 pr-20 gap-5 text-black'>
+    <section id="projects" className='font-source bg-white text-lg grid md:flex-row lg:flex justify-center py-10 pl-10 pr-10 md:pl-20 md:pr-20 gap-5 text-black'>
      
     <div className="card w-100 bg-base-100 md:w-96 shadow-md">
      <figure><img src="/NC2.jpg" alt="image of kde logo" /></figure>
@@ -108,10 +120,10 @@ const Home: NextPage = () => {
     </section>
     </div>
     </div>
-    <footer className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6">
-    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">SASE TAMU</a>. Made by Vic!
+    <footer className="fixed bottom-0 left-0 z-20 w-full bg-white border-t border-gray-200 shadow flex items-center justify-between md:p-6">
+    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 pl-5 pb-2 md:pb-0">made by vic
     </span>
-    <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+    <ul className="flex flex-wrap items-center mt-3 pb-4 md:pb-0 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
             <a href="#" className="mr-4 hover:underline md:mr-6">Linktree</a>
         </li>
@@ -122,7 +134,7 @@ const Home: NextPage = () => {
             <a href="#" className="mr-4 hover:underline md:mr-6">LinkedIn</a>
         </li>
         <li>
-            <a href="#" className="bg-sky-600 p-3 rounded-xl text-white hover:underline">Contact</a>
+            <a href="#" className="mr-4 hover:underline">Contact</a>
         </li>
     </ul>
   </footer>
