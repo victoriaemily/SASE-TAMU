@@ -1,4 +1,6 @@
 import React from 'react'
+// When using `moment`
+
 
 const events = () => {
   return (
