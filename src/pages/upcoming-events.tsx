@@ -12,11 +12,9 @@ const upcoming_events = () => {
   return (
     <>
     <a className="font-bebas text-5xl pt-40 pr-5 pl-5 md:pl-20">Upcoming Events</a>
-    <div className="pl-20 pr-20">
-      <div data-tockify-component="calendar" data-tockify-calendar="sasecalendartamu"></div>
-    </div>
-  <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-    
+    <div className="googleCalendar">
+  <iframe src="https://calendar.google.com/calendar/embed?src=sasetamu%40gmail.com&ctz=America%2FChicago"></iframe>
+  </div>  
     </>
   )
 }
