@@ -20,14 +20,15 @@ const about = () => {
         <a className="font-bebas text-5xl">OUR MISSION</a>
         <div className="pt-5 pb-5">
           <div>The Society of Asian Scientists and Engineers (SASE) was founded in November 2007 to help Asian heritage scientific and engineering professionals achieve their full potential.</div>
-          <div className="font-bold">SASE is dedicated to the advancement of Asian heritage scientists and engineers in education and employment so that they can achieve their full career potential. In addition to professional development, SASE also encourages members to contribute to the enhancement of the communities in which they live.</div>    
+          <div className="font-bold">SASE is dedicated to the advancement of Asian heritage scientists and engineers in education and employment so that they can achieve their full career potential. In addition to professional development, SASE also encourages members to contribute to the enhancement of the communities in which they live.</div>  
+          <div className="font-bold">For more information about SASE's national mission, check out <a href="https://saseconnect.org" className="underline">https://saseconnect.org</a>.</div>  
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
         <Image className="w-full rounded-xl"
                   src="/LONESTAR.jpg"
-                  width={450}
-                  height={50}
+                  width={400}
+                  height={300}
                   alt="Picture of SASE Meeting"
         />
       </div>

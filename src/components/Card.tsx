@@ -1,17 +1,36 @@
 import React from 'react';
+import { BsLinkedin } from 'react-icons/bs';
+
 
 interface CardProps {
   imageSrc: string;
-  altText: string;
-  text: string;
+  name: string;
+  major: string;
+  role: string;
+  bio: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, altText, text }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, name, major, role, bio }) => {
   return (
-    <div className="flex flex-col items-center rounded-lg p-4 mb-4 w-100">
-      <img src={imageSrc} alt={altText} className="w-20 h-20 mb-4 md:w-32 md:h-auto" />
-      <p className="text-gray-800">{text}</p>
-    </div>
+
+    <div className="card w-64 bg-base-100 h-96 md:w-64 shadow-lg">
+     <figure><img src={imageSrc}/>
+     <div className="opacity-0 duration-300 absolute inset-0 z-10 flex justify-center pt-10 rounded-2xl text-shadow-md font-sans"></div></figure>
+     <div className="card-body bg-white text-md">
+      <div>
+        <div className="inline-flex">
+        <p className="text-black">{name}</p>
+        <div className="pl-4 mt-1"><BsLinkedin/></div>
+        </div>
+         <p className="text-gray-400">{major}</p>
+         <p className="text-gray-400">{role}</p>
+         {/* <p className="text-gray-400">{bio}</p> */}
+      </div>
+     </div>
+     </div>
+
+
+
   );
 };
 

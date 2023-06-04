@@ -21,6 +21,8 @@ const Home: NextPage = () => {
     </div>
     <div className="bg-white text-black font-source">
     <div className="flex bg-white items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-informational">
+
+      {/* DESKTOP */}
       <div className="hidden md:block mt-12">
           <div>
             <div className="dash mb-5 md:dash-md"></div>
@@ -32,11 +34,6 @@ const Home: NextPage = () => {
             <div className="dash mt-3"></div>
           </div>
           <div className="flex font-source text-lg flex-row space-x-5 mt-3 items-center justify-center">
-          <button className="bg-green-500 bg-opacity-75 mt-5 hover:bg-slate-500 hover:text-white text-white py-2 px-4 border rounded">
-            <a href="/about">
-                About
-              </a>
-            </button>
             <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
               <a href="/join">
                 Join SASE!
@@ -49,6 +46,8 @@ const Home: NextPage = () => {
             </button>
           </div> 
       </div>
+
+      {/* MOBILE */}
       <div className="block md:hidden">
           <div>
             <div className="dash-sm mb-5"></div>
@@ -60,11 +59,6 @@ const Home: NextPage = () => {
             <div className="dash-sm mt-3"></div>
           </div>
           <div className="flex font-source text-lg flex-row space-x-5 mt-3 items-center justify-center">
-            <button className="bg-green-500 bg-opacity-75 mt-5 hover:bg-slate-500 hover:text-white text-white py-2 px-4 border rounded">
-            <a href="/about">
-                About
-              </a>
-            </button>
             <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
               <a href="/join">
                 Join SASE!
@@ -76,14 +70,13 @@ const Home: NextPage = () => {
               </a>
             </button>
           </div>
-          
       </div>
     </div>
 
     <div className="bg-white flex flex-col font-source md:flex-row">
       <div className="md:w-1/2 pt-5 pr-10 pb-20 pl-10 md:pl-20">
         <a className="font-bebas text-5xl">Our Mission</a>
-        <div className="pt-5 pb-5">
+        <div className="pt-5 md:pb-5">
           <div>The Society of Asian Scientists and Engineers (SASE) was founded in November 2007 to help Asian heritage scientific and engineering professionals achieve their full potential.</div>
           <div className="font-bold">SASE is dedicated to the advancement of Asian heritage scientists and engineers in education and employment so that they can achieve their full career potential. In addition to professional development, SASE also encourages members to contribute to the enhancement of the communities in which they live.</div>          
           <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
@@ -93,7 +86,7 @@ const Home: NextPage = () => {
             </button>
         </div>
       </div>
-      <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
+      <div className="md:w-1/2 pl-10 pr-10 -mt-10 md:mt-0 self-center">
         <Image className="w-full rounded-xl"
                   src="/LONESTAR.jpg"
                   width={450}
@@ -108,35 +101,26 @@ const Home: NextPage = () => {
       <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
       </svg>
     </div>
-    
-    <div>
-    <a className="font-bebas text-5xl pr-5 pl-5 md:pl-20">Quick Links</a>
 
-    <section id="projects" className='text-3xl font-source bg-white text-lg grid md:flex-row lg:flex justify-center py-10 pl-10 pr-10 md:pl-20 md:pr-20 gap-5 text-black'>
-      <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-        <a href="discordlink">
-          <BsDiscord/>
-        </a>
-      </button>
-      <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-        <a href="discordlink">
-          Linktree
-        </a>
-      </button>
-      <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-        <a href="discordlink">
-          Instagram
-        </a>
-      </button>
-      <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-        <a href="discordlink">
-          Merch
-        </a>
-      </button>
-    </section>
+    <div className="hidden md:block">
+    <div className="p-10 pb-10 flex justify-center">
+    <div className="googleCalendar">
+    <iframe src="https://calendar.google.com/calendar/embed?src=sasetamu%40gmail.com&ctz=America%2FChicago"></iframe>
+    </div>  
+    </div>
+    </div>
+    
+    <div className="block md:hidden">
+    <div className="pl-10 pr-10 flex justify-center">
+    <div className="smgoogleCalendar">
+    <iframe src="https://calendar.google.com/calendar/embed?src=sasetamu%40gmail.com&ctz=America%2FChicago&mode=AGENDA" height="400"></iframe>
+    </div>  
+    </div>
     </div>
 
-    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20">
+
+
+    <div className="hidden md:block bg-white h-max flex justify-center pt-20 p-10 md:p-20">
     </div>
       
     </div>

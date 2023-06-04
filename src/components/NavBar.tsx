@@ -64,7 +64,7 @@ export const NavBar = () => {
                   <div className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div className="py-1 text-md" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                       <a href="/upcoming-events" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Upcoming Events</a>
-                      <a href="/sase-squads" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">SASE Squads</a>
+                      {/* <a href="/gallery" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Gallery</a> */}
                       {/* <a href="/past-events" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Past Events</a> */}
                       {/* <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Trivia Night</a> */}
                     </div>
