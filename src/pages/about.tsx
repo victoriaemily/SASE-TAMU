@@ -93,19 +93,21 @@ const about = () => {
         <Image className="w-full rounded-xl"
                   src="/INFO.jpg"
                   width={450}
-                  height={50}
+                  height={300}
                   alt="Picture of SASE Meeting"
         />
       </div>
     </div>
     
-    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20">
+    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20"></div>
+    
     </div>
 
+    <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-big">
     </div>
 
     <Footer/>
-
+    
     </div>
   )
 }

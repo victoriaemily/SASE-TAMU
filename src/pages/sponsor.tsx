@@ -1,67 +1,105 @@
 import React from 'react'
+import Image from 'next/image';
 import {NavBar} from '../components/NavBar';
 import {Footer} from '../components/Footer';
-import {AiOutlineFilePdf} from 'react-icons/ai'
 import LogoList from '../components/LogoList';
 
 const sponsor = () => {
-  const logos = [
+  const logosPlatinum = [
+    'company.png',
+    // Add more logo paths as needed
+  ];
+  const logosGold = [
     'company.png',
     'company.png',
     'company.png',
     // Add more logo paths as needed
   ];
-  const logos1 = [
-    'company.png',
-    'company.png',
-    'company.png',
-    'company.png',
+  const logosSilver = [
     'company.png',
     'company.png',
     // Add more logo paths as needed
   ];
+  const logosBronze = [
+    'company.png',
+    // Add more logo paths as needed
+  ];
+
   return (
 <div>
   <div className="bg-white">
+    <div className="fixed w-full z-4">
     <NavBar/>
-    <div className="font-bebas pt-10 text-black text-5xl text-center">
+    </div>
+    
+    <div className="bg-white h-max flex justify-center p-10 md:p-10">
+    </div>
+
+    <div className="bg-white flex flex-col text-black font-source md:flex-row">
+      <div className="md:w-1/2 pt-5 pr-10 pb-10 md:pb-20 pl-10 md:pl-20">
+        <a className="font-bebas text-black text-5xl">sponsorship</a>
+        <div className="pt-5 pb-5">
+        <div>SASE is a non-profit 501(c)3 organization, and contributions to SASE are tax deductible.</div>
+         <div>If you are interested in partnering with SASE TAMU, we would love to get into contact with you at <a href="mailto:sasetamu.evp@gmail.com" className="underline">sasetamu.evp@gmail.com!</a></div>
+          <div>Take a look at our current sponsorship package below.</div> 
+          <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
+              <a href="null">View our Sponsorship Package Here!</a>
+            </button>
+        </div>
+      </div>
+      <div className="md:w-1/2 pl-10 pb-5 md:pt-5 pr-10 self-center">
+        <Image className="w-full rounded-xl"
+                  src="/INFO.jpg"
+                  width={450}
+                  height={250}
+                  alt="SASE Fall Informational"
+        />
+      </div>
+    </div>
+    <div className="font-bebas pt-20 text-black text-5xl text-center">
         sponsor sase tamu
       </div>
-      <div className="p-5 md:pl-40 md:pr-40 text-center text-md">
-      <div className="font-sans pt-5">
-        We would like to thoroughly thank our sponsors for their continued support and cooperation.
+      <div className="p-5 md:pl-40 pr-10 pl-10 font-source md:pr-40 text-black text-center text-md">
+      <div className="pt-5">We would like to thoroughly thank our sponsors for their continued support and cooperation.</div>
+      <div className="">The success of our chapter depends on your support. Our sponsors are  instrumental in helping us achieve our goals and create a more diverse and inclusive engineering and science community. We look forward to continuing our partnership and working together to make an even greater impact in the future.</div>
       </div>
-      <div className="font-sans text-center">
-        The success of our chapter depends on your support. If you are a new sponsor or interested in partnering with SASE TAMU, we would love to get into contact with you! Take a look at our current sponsorship package below.
+
+      <div className="pl-20 pr-20">
+
+      <div className="font-bebas pt-5 text-gray-300 text-5xl text-center">
+        Platinum
       </div>
-      <div className='flex justify-center p-10 md:p-10 text-5xl'>
-          <div className="flex">
-          <a href="null"><AiOutlineFilePdf/></a>
-          </div>
-      </div>
-      </div>
-      <div className="font-bebas pt-5 text-black text-5xl text-center">
+      <LogoList
+      logoPaths={logosPlatinum}
+      />
+
+      <div className="font-bebas pt-5 text-amber-300 text-5xl text-center">
         Gold
       </div>
       <LogoList
-      logoPaths={logos1}
+      logoPaths={logosGold}
       />
       
-      <div className="font-bebas pt-5 text-black text-5xl text-center">
+      <div className="font-bebas pt-5 text-gray-600 text-5xl text-center">
         Silver
       </div>
       <LogoList
-      logoPaths={logos}
+      logoPaths={logosSilver}
       />
       
-      <div className="font-bebas pt-5 text-black text-5xl text-center">
+      <div className="font-bebas pt-5 text-amber-600 text-5xl text-center">
         Bronze
       </div>
       <LogoList
-      logoPaths={logos}
+      logoPaths={logosBronze}
       />
-      
+      </div>
 
+      <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20">
+    </div>
+
+  </div>
+  <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-spring">
   </div>
   <Footer/>
 </div>

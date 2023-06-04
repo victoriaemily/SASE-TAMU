@@ -124,7 +124,8 @@ const Home: NextPage = () => {
     </div>
       
     </div>
-
+    <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-cuties">
+  </div>
     <Footer/>
 
   

@@ -14,6 +14,11 @@ export default {
       },
       backgroundImage: {
         'informational': "url('/INFORMATIONAL.jpg')",
+        'meow': "url('/meow.jpg')",
+        'spring': "url('/springinfo.jpg')",
+        'cuties': "url('/cutiess.jpg')",
+        'karaoke': "url('/karaoke.jpg')",
+        'big': "url('/big.jpg')",
       },
     },
   },

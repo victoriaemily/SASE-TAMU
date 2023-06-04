@@ -29,8 +29,11 @@ const upcoming_events = () => {
     </div>  
     </div>
     </div>
+
     </div>
 
+  </div>
+  <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-karaoke">
   </div>
   <Footer/>
 

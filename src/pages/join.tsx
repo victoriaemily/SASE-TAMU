@@ -31,7 +31,7 @@ const join = () => {
         <Image className="w-full rounded-xl"
                   src="/squad.jpg"
                   width={450}
-                  height={250}
+                  height={300}
                   alt="favs"
         />
       </div>
@@ -76,11 +76,19 @@ const join = () => {
     </section>
     </div>
 
+    <div className="bg-white flex justify-center pt-10 md:pt-20 p-20">
+      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
+      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+      </svg>
+    </div>
 
-    <div className="bg-white h-max flex justify-center p-10 md:p-10">
-    </div>
-    <div className="bg-white h-max flex justify-center p-10 md:p-10">
-    </div>
+    
+
+
+
+  </div>
+
+  <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-meow">
   </div>
   <Footer/>
     </div>
