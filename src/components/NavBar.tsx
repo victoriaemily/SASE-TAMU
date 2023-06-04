@@ -93,9 +93,9 @@ export const NavBar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a href="/" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
               <a href="/about" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-              <a href="/officer-team" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Officer Team</a>
+              <a href="/our-team" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Officer Team</a>
               <a href="/upcoming-events" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Upcoming Events</a>
-              <a href="/sase-squads" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">SASE Squads</a>
+              {/* <a href="/sase-squads" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">SASE Squads</a> */}
               {/* <a href="/past-events" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Past Events</a> */}
               <a href="/join" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Join</a>
               <a href="/sponsor" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sponsor</a>
