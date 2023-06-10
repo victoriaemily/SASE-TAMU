@@ -1,7 +1,6 @@
 import React from 'react'
 import {NavBar} from '../components/NavBar';
 import {Footer} from '../components/Footer';
-import Image from 'next/image';
 
 const about = () => {
   return (
@@ -25,7 +24,7 @@ const about = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
-        <Image className="w-full rounded-xl"
+        <img className="w-full rounded-xl"
                   src="/LONESTAR.jpg"
                   width={400}
                   height={300}
@@ -90,7 +89,7 @@ const about = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
-        <Image className="w-full rounded-xl"
+        <img className="w-full rounded-xl"
                   src="/INFO.jpg"
                   width={600}
                   height={400}

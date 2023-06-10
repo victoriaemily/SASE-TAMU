@@ -28,7 +28,7 @@ const join = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pb-5 md:pt-5 pr-10 self-center">
-        <Image className="w-full rounded-xl"
+        <img className="w-full rounded-xl"
                   src="/squad.jpg"
                   width={1080}
                   height={810}

@@ -2,12 +2,8 @@
 
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import {NavBar} from '../components/NavBar';
 import {Footer} from '../components/Footer';
-import Image from 'next/image';
-import { BsDiscord } from 'react-icons/bs';
-
 
 const Home: NextPage = () => {
   return (
@@ -87,7 +83,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pr-10 -mt-10 md:mt-0 self-center">
-        <Image className="w-full rounded-xl"
+        <img className="w-full rounded-xl"
                   src="/LONESTAR.jpg"
                   width={450}
                   height={50}

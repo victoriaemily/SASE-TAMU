@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import {NavBar} from '../components/NavBar';
 import {Footer} from '../components/Footer';
 import LogoList from '../components/LogoList';
@@ -56,7 +55,7 @@ const sponsor = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pb-5 md:pt-5 pr-10 self-center">
-        <Image className="rounded-xl"
+        <img className="rounded-xl"
                   src="/INFO.jpg"
                   width={1063}
                   height={664}
