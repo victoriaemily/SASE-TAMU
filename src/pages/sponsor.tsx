@@ -76,28 +76,28 @@ const sponsor = () => {
         Platinum
       </div>
       <LogoList
-      logoPaths={logosPlatinum}
+      images={logosPlatinum}
       />
 
       <div className="font-bebas pt-5 text-amber-300 text-5xl text-center">
         Gold
       </div>
       <LogoList
-      logoPaths={logosGold}
+      images={logosGold}
       />
       
       <div className="font-bebas pt-5 text-gray-600 text-5xl text-center">
         Silver
       </div>
       <LogoList
-      logoPaths={logosSilver}
+      images={logosSilver}
       />
       
       <div className="font-bebas pt-5 text-amber-600 text-5xl text-center">
         Bronze
       </div>
       <LogoList
-      logoPaths={logosBronze}
+      images={logosBronze}
       />
       </div>
 
