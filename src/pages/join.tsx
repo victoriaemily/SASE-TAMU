@@ -19,9 +19,9 @@ const join = () => {
       <div className="md:w-1/2 pt-5 pr-10 pb-10 md:pb-20 pl-10 md:pl-20">
         <a className="font-bebas text-5xl">Interested in joining us?</a>
         <div className="pt-5 pb-5">
-          <div>Dues are $25 per semester and $40 for a year. Indicate your interest by signing up through our Google form!</div>
+          <div>Dues are $25 per semester and $40 for a year. Indicate your interest by joining our Discord for further events!</div>
           <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-              <a href="null">
+              <a href="https://linktr.ee/tamusase">
                 Sign up here!
               </a>
             </button>
@@ -30,9 +30,9 @@ const join = () => {
       <div className="md:w-1/2 pl-10 pb-5 md:pt-5 pr-10 self-center">
         <Image className="w-full rounded-xl"
                   src="/squad.jpg"
-                  width={450}
-                  height={250}
-                  alt="favs"
+                  width={1080}
+                  height={810}
+                  alt="Wintermelon Social"
         />
       </div>
     </div>

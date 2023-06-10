@@ -41,6 +41,8 @@ const sponsor = () => {
     <div className="bg-white h-max flex justify-center p-10 md:p-10">
     </div>
 
+    
+
     <div className="bg-white flex flex-col text-black font-source md:flex-row">
       <div className="md:w-1/2 pt-5 pr-10 pb-10 md:pb-20 pl-10 md:pl-20">
         <a className="font-bebas text-black text-5xl">sponsorship</a>
@@ -54,10 +56,10 @@ const sponsor = () => {
         </div>
       </div>
       <div className="md:w-1/2 pl-10 pb-5 md:pt-5 pr-10 self-center">
-        <Image className="w-full rounded-xl"
+        <Image className="rounded-xl"
                   src="/INFO.jpg"
-                  width={450}
-                  height={250}
+                  width={1063}
+                  height={664}
                   alt="SASE Fall Informational"
         />
       </div>

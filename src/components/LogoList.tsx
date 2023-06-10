@@ -1,15 +1,16 @@
 import React from 'react';
 
+
+//string of image values is passed into this interface, which is futher specified in inteface Image
+interface LogoList {
+  images: Image[];
+}
+
 interface Image {
   link: string;
   alt: string;
   path: string;
 }
-
-interface LogoList {
-  images: Image[];
-}
-
 
 const LogoList: React.FC<LogoList> = ({ images }) => {
   return (
@@ -19,6 +20,7 @@ const LogoList: React.FC<LogoList> = ({ images }) => {
         <img
           src={image.path}
           alt={image.alt}
+          //change the following className for styling
           className="h-36 p-4"
         />
         </a>

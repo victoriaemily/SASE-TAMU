@@ -92,8 +92,8 @@ const about = () => {
       <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
         <Image className="w-full rounded-xl"
                   src="/INFO.jpg"
-                  width={450}
-                  height={300}
+                  width={600}
+                  height={400}
                   alt="Picture of SASE Meeting"
         />
       </div>
