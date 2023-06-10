@@ -1,19 +1,22 @@
 import React from 'react';
 
 interface LogoProps {
-  logoPaths: string[];
+  link: string;
+  alt: string;
+  path: string;
 }
 
 const LogoList: React.FC<LogoProps> = ({ logoPaths }) => {
   return (
     <div className="flex flex-wrap justify-center">
-      {logoPaths.map((path, index) => (
+      {logoPaths.map((item, index) => (
+        <a href={item.link} key={index}>
         <img
-          key={index}
-          src={path}
-          alt={`Logo ${index + 1}`}
-          className="h-36"
+          src={item.path}
+          alt={item.alt}
+          className="h-36 p-4"
         />
+        </a>
       ))}
     </div>
   );

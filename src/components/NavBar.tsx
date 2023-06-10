@@ -23,7 +23,7 @@ export const NavBar = () => {
     <nav className="bg-white text-lg p-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0"> 
           <Link href="/" className="flex">
             <span className="self-center">
                 <div className="flex flex-row">
@@ -41,8 +41,8 @@ export const NavBar = () => {
                     alt="Picture of TAMU logo"
                     />
                 </div>
-            </span>
-        </Link>
+                </span>
+            </Link>
           </div>
           <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-10">

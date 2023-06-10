@@ -31,7 +31,7 @@ const join = () => {
         <Image className="w-full rounded-xl"
                   src="/squad.jpg"
                   width={450}
-                  height={300}
+                  height={250}
                   alt="favs"
         />
       </div>

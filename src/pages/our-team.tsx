@@ -6,7 +6,13 @@ import Card from '../components/Card';
 const Team : NextPage = () => {
   return (
     <div>
-    <div className="bg-white">
+      <div className="fixed w-full z-40">
+    <NavBar/>
+    </div>
+      <div className="p-40 bg-white text-black text-3xl h-screen font-bebas text-center">
+        This section is under construction. Check back with us in Fall 2023!
+      </div>
+    {/* <div className="bg-white">
     <div className="fixed w-full z-40">
     <NavBar/>
     </div>
@@ -107,7 +113,7 @@ const Team : NextPage = () => {
       />
       </div>
 
-    </div>
+    </div> */}
 
   <Footer/>
 </div>

@@ -4,24 +4,30 @@ import {NavBar} from '../components/NavBar';
 import {Footer} from '../components/Footer';
 import LogoList from '../components/LogoList';
 
+//NOTE THAT WHEN ADDING, FILE PATHS ARE CASE-SENSITIVE!
+
 const sponsor = () => {
   const logosPlatinum = [
-    'company.png',
+    { link: 'https://chevron.com', alt: 'Chevron', path: './sponsors/chevron.png'},
+    { link: 'https://shell.com', alt: 'Shell', path: './sponsors/shell.png'},
+    { link: 'https://phillips66.com', alt: 'Phillips 66', path: './sponsors/phillips.png'},
     // Add more logo paths as needed
   ];
   const logosGold = [
-    'company.png',
-    'company.png',
-    'company.png',
+    { link: 'https://lockheedmartin.com', alt: 'Lockheed Martin', path: './sponsors/lockheed.png'},
+    { link: 'https://williams.com', alt: 'Williams', path: './sponsors/williams.png'},
+
     // Add more logo paths as needed
   ];
   const logosSilver = [
-    'company.png',
-    'company.png',
+    { link: 'https://dow.com', alt: 'Dow', path: './sponsors/dow.png'},
+    { link: 'https://southwest.com', alt: 'Southwest', path: './sponsors/southwest.png'},
+
     // Add more logo paths as needed
   ];
   const logosBronze = [
-    'company.png',
+    { link: 'https://capitalone.com', alt: 'Capital One', path: './sponsors/capital_one.png'},
+
     // Add more logo paths as needed
   ];
 
@@ -43,7 +49,7 @@ const sponsor = () => {
          <div>If you are interested in partnering with SASE TAMU, we would love to get into contact with you at <a href="mailto:sasetamu.evp@gmail.com" className="underline">sasetamu.evp@gmail.com!</a></div>
           <div>Take a look at our current sponsorship package below.</div> 
           <button className="bg-sky-700 bg-opacity-75 mt-5 hover:bg-sky-700 hover:text-white text-white py-2 px-4 border rounded">
-              <a href="null">View our Sponsorship Package Here!</a>
+              <a href="/SASE_TAMU_Corporate_Package.pdf">View our Sponsorship Package Here!</a>
             </button>
         </div>
       </div>

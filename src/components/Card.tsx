@@ -24,7 +24,6 @@ const Card: React.FC<CardProps> = ({ imageSrc, name, major, role, link }) => {
         </div>
          <p className="text-gray-400">{major}</p>
          <p className="text-gray-400">{role}</p>
-         {/* <p className="text-gray-400">{link}</p> */}
       </div>
      </div>
      </div>
