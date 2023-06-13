@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     <div className="flex bg-white items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-informational">
 
       {/* DESKTOP */}
-      <div className="hidden md:block mt-12">
+      <div className="hidden md:block mt-12 animated animatedFadeInUp fadeInUp">
           <div>
             <div className="dash mb-5 md:dash-md"></div>
           </div>
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* MOBILE */}
-      <div className="block md:hidden">
+      <div className="block md:hidden animated animatedFadeInUp fadeInUp">
           <div>
             <div className="dash-sm mb-5"></div>
           </div>
