@@ -25,22 +25,19 @@ const about = () => {
       </div>
       <div className="md:w-1/2 pl-10 pt-5 pr-10 self-center">
         <img className="w-full rounded-xl"
-                  src="/LONESTAR.jpg"
+                  src="/scrc.jpg"
                   width={400}
                   height={300}
-                  alt="Picture of SASE Meeting"
+                  alt="Picture of SASE SCRC"
         />
       </div>
     </div>
 
-    <div className="bg-white flex justify-center pt-30 p-20">
-      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
-    </div>
-    
+
+    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20"></div>
+
     <div>
-    <a className="font-bebas text-5xl pt-20 pr-5 pl-5 md:pl-20">Core Pilars</a>
+    <a className="font-bebas text-5xl pt-20 pr-5 pl-10 md:pl-20">Core Pilars</a>
 
     <section id="projects" className='font-source bg-white text-lg grid md:flex-row lg:flex justify-center py-10 pl-10 pr-10 md:pl-20 md:pr-20 gap-5 text-black'>
      
@@ -70,14 +67,11 @@ const about = () => {
     </section>
     </div>
 
-    <div className="bg-white flex justify-center pt-10 p-20">
-      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
-    </div>
+    <div className="bg-white h-max flex justify-center p-5 md:p-20"></div>
+
 
     <div className="bg-white flex flex-col font-source md:flex-row">
-      <div className="md:w-1/2 pt-5 pr-10 pl-10 md:pl-20">
+      <div className="md:w-1/2 pr-10 pl-10 md:pl-20">
         <a className="font-bebas text-5xl">Corporate Partnerships</a>
         <div className="pt-5 pb-5">
           <div>SASE is a non-profit 501(c)3 organization, and contributions to SASE are tax deductible.</div>

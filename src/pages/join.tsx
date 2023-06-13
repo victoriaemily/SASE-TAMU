@@ -37,16 +37,10 @@ const join = () => {
       </div>
     </div>
 
-
-    <div className="bg-white flex justify-center pt-10 md:pt-20 p-20">
-      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
-    </div>
-
+    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20"></div>
 
     <div>
-    <a className="font-bebas text-5xl pt-20 pr-5 pl-5 md:pl-20">some past events :)</a>
+    <a className="font-bebas text-5xl pt-20 pr-5 pl-10 md:pl-20">some past events :)</a>
 
     <section id="projects" className='font-source bg-white text-lg grid md:flex-row lg:flex justify-center py-10 pl-10 pr-10 md:pl-20 md:pr-20 gap-5 text-black'>
      
@@ -76,19 +70,13 @@ const join = () => {
     </section>
     </div>
 
-    <div className="bg-white flex justify-center pt-10 md:pt-20 p-20">
-      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
-    </div>
-
-    
-
-
+    <div className="bg-white h-max flex justify-center pt-20 p-10 md:p-20"></div>
 
   </div>
 
-  <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-meow">
+  <div className="block md:hidden flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-sweet">
+  </div>
+  <div className="hidden md:block flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-meow">
   </div>
   <Footer/>
     </div>

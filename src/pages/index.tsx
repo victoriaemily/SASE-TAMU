@@ -92,14 +92,12 @@ const Home: NextPage = () => {
       </div>
     </div>
 
-    <div className="bg-white flex justify-center pt-10 p-20">
-      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="bi bi-three-dots">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
-    </div>
+    <div className="bg-white flex justify-center pt-10 md:p-10"></div>
+
+    <a className="font-bebas text-5xl pr-5 pl-10 pb-10 md:pl-20">Upcoming Events</a>
 
     <div className="hidden md:block">
-    <div className="p-10 pb-10 flex justify-center">
+    <div className="p-10 flex justify-center">
     <div className="googleCalendar">
     <iframe src="https://calendar.google.com/calendar/embed?src=sasetamu%40gmail.com&ctz=America%2FChicago"></iframe>
     </div>  
@@ -107,7 +105,7 @@ const Home: NextPage = () => {
     </div>
     
     <div className="block md:hidden">
-    <div className="pl-10 pr-10 flex justify-center">
+    <div className="pl-10 pr-10 pt-5 flex justify-center">
     <div className="smgoogleCalendar">
     <iframe src="https://calendar.google.com/calendar/embed?src=sasetamu%40gmail.com&ctz=America%2FChicago&mode=AGENDA" height="400"></iframe>
     </div>  
@@ -116,12 +114,13 @@ const Home: NextPage = () => {
 
 
 
-    <div className="hidden md:block bg-white h-max flex justify-center pt-20 p-10 md:p-20">
-    </div>
+    <div className="hidden md:block bg-white h-max flex justify-center pt-20 p-10 md:p-20"></div>
       
     </div>
-    <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-cuties">
-  </div>
+    <div className="hidden md:block flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-cuties">
+    </div>
+    <div className="block md:hidden flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-elevator">
+    </div>
     <Footer/>
 
   

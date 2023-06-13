@@ -1,1 +1,0 @@
-declare module 'react-embedded-google-calendar';

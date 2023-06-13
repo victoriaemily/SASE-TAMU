@@ -67,7 +67,7 @@ const sponsor = () => {
         sponsor sase tamu
       </div>
       <div className="p-5 md:pl-40 pr-10 pl-10 font-source md:pr-40 text-black text-center text-md">
-      <div className="pt-5">We would like to thoroughly thank our sponsors for their continued support and cooperation.</div>
+      <div className="">We would like to thoroughly thank our sponsors for their continued support and cooperation.</div>
       <div className="">The success of our chapter depends on your support. Our sponsors are  instrumental in helping us achieve our goals and create a more diverse and inclusive engineering and science community. We look forward to continuing our partnership and working together to make an even greater impact in the future.</div>
       </div>
 

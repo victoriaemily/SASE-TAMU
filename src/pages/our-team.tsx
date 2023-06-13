@@ -5,12 +5,13 @@ import Card from '../components/Card';
 
 const Team : NextPage = () => {
   return (
-    <div>
+    <div className="h-screen bg-white">
       <div className="fixed w-full z-40">
     <NavBar/>
     </div>
-      <div className="p-40 bg-white text-black text-3xl h-screen font-bebas text-center">
-        This section is under construction. Check back with us in Fall 2023!
+      <div className="pt-40 bg-white text-black text-2xl md:text-5xl font-bebas text-center">
+        <p>This section is under construction.</p>
+        <p>Check back with us in Fall 2023!</p>
       </div>
     {/* <div className="bg-white">
     <div className="fixed w-full z-40">
@@ -114,8 +115,10 @@ const Team : NextPage = () => {
       </div>
 
     </div> */}
-
-  <Footer/>
+    
+    <div className="fixed bottom-0 w-full">
+      <Footer/>
+    </div>
 </div>
   )
 }
