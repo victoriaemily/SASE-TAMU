@@ -14,7 +14,7 @@ export const Footer = () => {
             <a href="https://linktr.ee/tamusase" className="mr-4 hover:text-sky-600  md:mr-6"><SiLinktree/></a>
         </li>
         <li>
-            <a href="https://www.instagram.com/sasetamu/" className="mr-4 hover:text-sky-600  md:mr-6"><BsDiscord/></a>
+            <a href="https://discord.gg/Fy4UNSn" className="mr-4 hover:text-sky-600  md:mr-6"><BsDiscord/></a>
         </li>
         <li>
             <a href="https://www.instagram.com/sasetamu/" className="mr-4 hover:text-sky-600  md:mr-6"><BsInstagram/></a>
