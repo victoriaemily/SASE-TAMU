@@ -105,7 +105,9 @@ const Team : NextPage = () => {
       link="https://www.linkedin.com/in/paulinewade"
       />
       </div>
-      <div className="flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-officer">
+      <div className="block md:hidden flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-officer_mobile">
+      </div>
+      <div className="hidden md:block flex bg-white items-center justify-center h-96 bg-fixed bg-center bg-cover bg-officer">
       </div>
     <Footer/>
     </div>
