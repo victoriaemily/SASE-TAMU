@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { AiOutlineUser } from 'react-icons/ai';
 
 export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -73,6 +74,7 @@ export const NavBar = () => {
               </div>
               <a href="/join" className="hover-underline-animation text-gray-500 rounded-md">Join</a>
               <a href="/sponsor" className="hover-underline-animation text-gray-500 rounded-md">Sponsor</a>
+              {/* <a href="/user" className="hover-underline-animation text-gray-500 rounded-md">Login</a> */}
               {/* ... */}
             </div>
           </div>
@@ -99,6 +101,7 @@ export const NavBar = () => {
               {/* <a href="/past-events" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Past Events</a> */}
               <a href="/join" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Join</a>
               <a href="/sponsor" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sponsor</a>
+              {/* <a href="/user" className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><AiOutlineUser/></a> */}
             </div>
           </div>
         )}

@@ -13,7 +13,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ imageSrc, name, major, role, link }) => {
   return (
 
-    <div className="card w-64 bg-base-100 h-96 md:w-64 shadow-lg">
+    <div className="card w-64 h-96 bg-base-100 shadow-xl">
      <figure><img src={imageSrc}/>
      <div className="flex justify-center pt-10 rounded-2xl text-shadow-md font-sans"></div></figure>
      <div className="card-body bg-white text-md">
