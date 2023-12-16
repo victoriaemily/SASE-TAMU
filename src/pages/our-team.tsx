@@ -66,7 +66,7 @@ const Team : NextPage = () => {
       />
       <Card
       imageSrc="/headshots/social.jpg"
-      name="Nathanael Kamat"
+      name="Nathan Kamat"
       major="ESET '26"
       role="Social Director"
       link="null"
