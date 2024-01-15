@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
-import { useEventFetch } from '~/hooks/useEventFetch'
 import Image from 'next/image';
 
-const user = () => {
+interface ApiResponse {
+  message: string;
+}
+
+const User = () => {
   const current_event = "GBM1"
 
   const searchParams = useSearchParams()
@@ -17,13 +20,17 @@ const user = () => {
     return uin_regex.test(uin)
   }
 
+  const handleButtonClick = () => {
+    void submitAttendance();
+  };
+
   const submitAttendance = async () => {
     if (event?.toUpperCase() === current_event) {
       if (!check_uin(uin)) {
         alert("Invalid UIN");
         return;
       }
-
+  
       try {
         const response = await fetch("/api/attendance", {
           cache: 'no-cache',
@@ -33,22 +40,44 @@ const user = () => {
           },
           body: JSON.stringify({ uin: uin, event: event }),
         });
-        const responseData = await response.json();
-
+  
+        const isApiResponse = (obj: unknown): obj is ApiResponse => {
+          return typeof obj === 'object' && obj !== null && 'message' in obj;
+        };
+  
         if (response.ok) {
-          // User either marked successfully or already present
-          alert(responseData.message);
+          const json: unknown = await response.json(); // Declare json as unknown
+          if (isApiResponse(json)) {
+            const responseData: ApiResponse = json; // Type is now narrowed to ApiResponse
+            alert(responseData.message);
+          } else {
+            // Handle unexpected response structure
+            console.error("Invalid response structure:", json);
+          }
         } else {
-          alert(`Error: ${responseData.message}`);
+          const json: unknown = await response.json(); // Declare json as unknown
+          if (isApiResponse(json)) {
+            const errorData: ApiResponse = json; // Type is now narrowed to ApiResponse
+            alert(`Error: ${errorData.message}`);
+          } else {
+            // Handle unexpected response structure
+            console.error("Invalid error response structure:", json);
+          }
         }
       } catch (error) {
-        alert('Failed to mark attendance');
-      }
+        if (error instanceof Error) {
+          alert(`Failed to mark attendance: ${error.message}`);
+        } else {
+          alert('Failed to mark attendance');
+        }
+      } finally {
+      // clear the UIN input field after submission
+      setUin('');
+    }
     } else {
       alert("Event not active");
     }
   };
-
 
   return (
     <div className="font-source text-black bg-white flex flex-col items-center justify-start pt-20 min-h-screen">
@@ -77,8 +106,8 @@ const user = () => {
           className='w-full mb-4 p-2 bg-white border border-blue-500 rounded'
         />
         <button 
-          onClick={submitAttendance} 
-          className='w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2 px-4 rounded'
+        onClick={handleButtonClick}
+        className='w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2 px-4 rounded'
         >
           Mark Attendance
         </button>
@@ -88,4 +117,4 @@ const user = () => {
   );
 };
 
-export default user
+export default User;

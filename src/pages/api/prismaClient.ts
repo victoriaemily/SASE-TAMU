@@ -1,9 +1,13 @@
-// prismaClient.js
 import { PrismaClient } from '@prisma/client';
 
-let prisma;
+// Ensure prisma is not redefined in development
+declare const global: {
+  prisma?: PrismaClient;
+};
 
-if (process.env.NODE_ENV === "production") {
+let prisma: PrismaClient;
+
+if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient();
 } else {
   if (!global.prisma) {
