@@ -1,11 +1,14 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { PrismaClient } from '@prisma/client';
+import type { NextApiRequest, NextApiResponse } from 'next';
+import prisma from './prismaClient'; // import the singleton instance
+
 import { NextRequest } from 'next/server';
 
-const client = new PrismaClient();
+const client = prisma;
 
 export const POST = async (request: NextRequest) => {
     const {uin, event} = await request.json()
+
+    const eventKey = event.toUpperCase();
 
     const user = await client.users.findUnique({
         where: {
@@ -19,14 +22,14 @@ export const POST = async (request: NextRequest) => {
                 UIN: uin,
             },
             data: {
-                [event]: 1,
+                [eventKey]: 1,
             }
         })
     }else{
         const response = await client.users.create({
             data: {
                 UIN: uin,
-                [event]: 1,
+                [eventKey]: 1,
             }
         })
     }
