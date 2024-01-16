@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ApiResponse {
   message: string;
@@ -85,6 +86,7 @@ const User = () => {
   return (
     <div className="font-source text-black bg-white flex flex-col items-center justify-start pt-20 min-h-screen">
       <div className="flex flex-row mb-10">
+      <Link href="/" className="flex">
         <Image
         src="/SASE_LOGO.png"
         width={150}
@@ -98,6 +100,7 @@ const User = () => {
         height={50}
         alt="Picture of TAMU logo"
         />
+      </Link>
       </div>
       <div className="w-full md:w-1/2 p-10 bg-white shadow-lg rounded-xl">
       <h1 className="font-bebas text-5xl mb-5">Mark Your Attendance for {event || 'Event'}</h1>
