@@ -102,7 +102,7 @@ const User = () => {
         />
       </Link>
       </div>
-      <div className="w-full md:w-1/2 p-10 bg-white shadow-lg rounded-xl">
+      <div className="w-2/3 md:w-1/2 p-10 bg-white shadow-lg rounded-xl">
       <h1 className="font-bebas text-5xl mb-5">Mark Your Attendance for {event || 'Event'}</h1>
         <input 
           type="text" 
