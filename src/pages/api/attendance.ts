@@ -30,6 +30,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const eventKey = event.toUpperCase();
 
+    const columns = await prisma.$queryRaw`SHOW COLUMNS FROM Users`;
+    console.log(columns);
+
     const user = await prisma.users.findUnique({
       where: { UIN: uin }
     }) as User | null;  // Type assertion
