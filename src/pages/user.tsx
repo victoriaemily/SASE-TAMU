@@ -111,18 +111,18 @@ const User = () => {
   };
 
   const determineCurrentEvent = (time: Date) => {
-    console.log('Determining current event for time:', time);
+    console.log('Determining current event for time:', time.toISOString());
     for (const [event, { startDate, endDate }] of Object.entries(eventSchedule)) {
-      console.log(`Checking event: ${event} (${startDate} - ${endDate})`);
+      console.log(`Checking event: ${event} (${startDate.toISOString()} - ${endDate.toISOString()})`);
       if (time >= startDate && time <= endDate) {
         console.log(`Current event determined: ${event}`);
-        console.log('!!!!!!!!!!!!!!!!')
         return event;
       }
     }
     console.log('No current event active');
     return 'NULL';
   };
+  
 
   useEffect(() => {
     console.log('Effect hook triggered by serverTime change');
