@@ -17,30 +17,40 @@ const Attendance = () => {
   const [displayUIN, setDisplayUIN] = useState('');
   const [isSearching, setIsSearching] = useState(false); // Track if a search is in progress
 
+  const handleButtonClick = () => {
+    void fetchAttendance();
+  };
+
   const fetchAttendance = async () => {
     if (!check_uin(uin)) {
       alert("Invalid UIN. Please enter a valid 9-digit UIN.");
       return;
     }
-
-    setIsSearching(true); // Indicate that a search has started
+  
+    setIsSearching(true);
     setAttendedEvents([]);
     setDisplayUIN(uin);
-
+  
     try {
       const response = await fetch(`/api/attendance?uin=${uin}`);
       if (response.ok) {
-        const data: AttendanceApiResponse = await response.json();
-        setAttendedEvents(data.attendedEvents);
+        // Type cast the response to the expected structure
+        const jsonResponse = await response.json() as AttendanceApiResponse;
+        if ('attendedEvents' in jsonResponse) {
+          setAttendedEvents(jsonResponse.attendedEvents);
+        } else {
+          console.error("Invalid response structure:", jsonResponse);
+        }
       } else {
         console.error("Failed to fetch attendance data");
       }
     } catch (error) {
       console.error("Error fetching attendance data:", error);
     } finally {
-      setIsSearching(false); // Reset the searching status
+      setIsSearching(false);
     }
   };
+  
 
   return (
     <div>
@@ -61,7 +71,7 @@ const Attendance = () => {
               className='w-full mb-4 p-2 bg-white border border-blue-500 rounded'
             />
             <button 
-              onClick={fetchAttendance}
+              onClick={handleButtonClick}
               className='w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2 px-4 rounded'
             >
               Check Attendance
