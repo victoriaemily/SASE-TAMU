@@ -74,13 +74,13 @@ const Attendance = () => {
               onClick={handleButtonClick}
               className='w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2 px-4 rounded'
             >
-              Check Attendance
+              Check Attendance 
             </button>
           </div>
           {displayUIN && <div className="w-5/6 md:w-1/2 p-10 bg-white shadow-lg rounded-xl mt-5">
             {displayUIN && (
               <>
-                <h2 className="font-bebas text-3xl mb-3">Attendance for UIN: {displayUIN}</h2>
+                <h2 className="font-bebas text-3xl mb-3">(Spring '24) Attendance for UIN: {displayUIN}</h2>
                 {attendedEvents.length > 0 ? (
                   <ul>
                     {attendedEvents.map(event => (
