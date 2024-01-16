@@ -7,6 +7,9 @@ interface ApiResponse {
 }
 
 const User = () => {
+  // MODIFY the following ONLY when changing current events
+  // Event key is listed in schema.prisma under the folder "prisma"
+
   const current_event = "GBM1"
 
   const searchParams = useSearchParams()
