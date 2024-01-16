@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -12,29 +9,22 @@ datasource db {
 }
 
 model Users {
-  id   Int    @id @default(autoincrement())
-  UIN  String @unique
-  
-  GBM1 Int    @default(0)
-
-  SPRINGINFO Int    @default(0)
-  WILLIAMSGBM Int    @default(0)
+  id          Int    @id @default(autoincrement())
+  UIN         String @unique
+  SPRINGINFO  Int    @default(0)
+  BOBASOCIAL  Int    @default(0)
+  CHEVRONGBM  Int    @default(0)
+  COMSOC1     Int    @default(0)
+  COMSOC2     Int    @default(0)
+  COMSOC3     Int    @default(0)
+  COMSOC4     Int    @default(0)
+  COMSOC5     Int    @default(0)
+  DOWGBM      Int    @default(0)
+  ETAMGBM     Int    @default(0)
+  LAUNCHGBM   Int    @default(0)
   LOCKHEEDGBM Int    @default(0)
-  CHEVRONGBM Int    @default(0)
-  DOWGBM Int    @default(0)
-  ETAMGBM Int    @default(0)
-  LAUNCHGBM Int    @default(0)
-  PEPSICOGBM Int    @default(0)
-
-  BOBASOCIAL Int    @default(0)
-  SQUADMIXER Int    @default(0)
-  COMSOC1 Int    @default(0)
-  COMSOC2 Int    @default(0)
-  COMSOC3 Int    @default(0)
-  COMSOC4 Int    @default(0)
-  COMSOC5 Int    @default(0)
-
+  SQUADMIXER  Int    @default(0)
+  WILLIAMSGBM Int    @default(0)
+  PEPSICOGBM  Int    @default(0)
+  GBM1        Int    @default(0)
 }
-
-// DO NOT delete any columns! 
-// You may add new columns and then run "npx prisma db push"
